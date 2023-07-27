@@ -1,0 +1,8 @@
+{
+  "label": "React (react-lua)",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "A library for building user interfaces in Lua."
+  }
+}
