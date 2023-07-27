@@ -18,8 +18,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "jsdotlua", // Usually your GitHub org/user name.
+  projectName: "jsdotlua.github.io", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -41,7 +41,7 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/jsdotlua/tree/main/",
+          editUrl: "https://github.com/jsdotlua/jsdotlua.github.io/tree/main/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -54,11 +54,11 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: "img/docusaurus-social-card.jpg",
+      image: "img/logo-192x192.png",
       navbar: {
         title: "JS.Lua",
         logo: {
-          alt: "My Site Logo",
+          alt: "JS.Lua Logo",
           src: "img/logo-192x192.png",
         },
         items: [
@@ -69,7 +69,7 @@ const config = {
             label: "Docs",
           },
           {
-            href: "https://github.com/jsdotlua",
+            href: "https://github.com/jsdotlua/jsdotlua.github.io",
             label: "GitHub",
             position: "right",
           },
