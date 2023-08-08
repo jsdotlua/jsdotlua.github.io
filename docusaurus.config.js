@@ -11,15 +11,15 @@ const config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://jsdotlua.github.io",
+  url: "https://unix-system.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
+  baseUrl: "/jsdotlua.github.io",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "jsdotlua", // Usually your GitHub org/user name.
-  projectName: "jsdotlua.github.io", // Usually your repo name.
+  organizationName: "unix-system", // Usually your GitHub org/user name.
+  projectName: "unix-system.github.io/jsdotlua.github.io", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
