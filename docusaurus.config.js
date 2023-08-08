@@ -15,11 +15,12 @@ const config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/jsdotlua.github.io",
+  trailingSlash: false,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "unix-system", // Usually your GitHub org/user name.
-  projectName: "unix-system.github.io/jsdotlua.github.io", // Usually your repo name.
+  projectName: "unix-system/jsdotlua.github.io", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
