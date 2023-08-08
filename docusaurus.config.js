@@ -20,7 +20,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "unix-system", // Usually your GitHub org/user name.
-  projectName: "unix-system/jsdotlua.github.io", // Usually your repo name.
+  projectName: "jsdotlua.github.io", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
