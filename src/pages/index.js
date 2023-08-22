@@ -32,8 +32,8 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      title={`${siteConfig.title}`}
+      description="The home of JS.Lua, a collection of Lua packages translated from JavaScript."
     >
       <HomepageHeader />
       <main className="container margin-vert--lg">
