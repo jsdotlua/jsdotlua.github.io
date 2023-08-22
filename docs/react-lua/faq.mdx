@@ -1,0 +1,61 @@
+---
+sidebar_position: 3
+---
+
+# FAQ
+
+## What is React?
+
+React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. It powers some of the largest websites in the world, including Facebook, Instagram, and Airbnb.
+
+You can read more about React on the [React website](https://react.dev/).
+
+## What is React-Lua?
+
+React-Lua is a set of packages that port React into the Roblox environment. It allows you to build user interfaces for Roblox games and experiences using the same declarative, component-based approach as React.
+
+## What is the difference between React and React-Lua?
+
+React is a JavaScript library for building user interfaces, whilst React-Lua is just the React library transpiled to Luau so it can run on Roblox.
+
+React-Lua also includes the `react-roblox` package, which is a renderer that adds Roblox-specific bindings for React.
+
+## What is the difference between React-Lua and Roact?
+
+[Roact](https://roblox.github.io/roact/) was the first React-like library for Roblox, and was popular due to its use by Roblox and adoption within the community. It is maintained by Roblox and is used in many Roblox games and experiences.
+
+Unlike React-Lua, Roact is not a direct port of React. It has a similar API, but it is not compatible with React code and it is missing many useful features that are included out of the box with React, such as hooks.
+
+## Why should I use React-Lua instead of just making it myself?
+
+LPGhatguy (the creator of Roact) did a great talk about why React paradigms solve quite a few issues that developers face when building user interfaces. You can watch it here:
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/vHTXAsHqrPI"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen
+></iframe>
+
+To summarise, React-Lua allows you to build user interfaces in a declarative, component-based way. This means that you can build your UIs in a way that is easy to reason about, and allows you to build complex UIs more easily.
+It also allows you to benefit more fully from the Rojo workflow, which allows you to build your UIs in a separate project with code and then sync them to your game.
+
+A few of the benefits that React-Lua provide are:
+
+- **Declarative:** React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
+- **Component-Based:** Build encapsulated components that manage their own state, then compose them to make complex UIs.
+- **Interface as Code:** React components are written in Lua, which means you can use all the benefits of a programming language when building your UIs. This includes things like variables, functions, loops, and more. You don't have to change your UI separately from your scripts,
+- **Consistency:** Since component logic is written in Lua instead of templates, you can easily pass data into your UIs and reuse them in different places. For example, you could style a button component and then reuse it in multiple places in your game. This helps you keep a consistent style across your game.
+- **Always matches your state:** When a component's state changes, React will update the UI to match the new state. This means that you don't have to worry about manually updating your UI when something changes. You just need to update the state, and React will handle the rest.
+- **Propogation of Updates:** An example of a really difficult problem to solve with conventional Roblox UI development would be having an optional Dark Mode. You'd have to manually update every single UI element when the Dark Mode setting changes, and understand which UI elements should change (and making sure you don't overwrite them later). With React-Lua, you can just update the state of the Dark Mode setting, and as long as your state propogates to the UI elements that need to change, React will handle the rest.
+
+## I don't understand how React works - how do I think in React?
+
+React seems like a daunting library at first, but once you understand the core concepts it becomes much easier to use. The React website has a great [Quick Start](https://react.dev/learn) that teaches you the core concepts of React, and how to build a simple tic-tac-toe game.
+
+## I'm stuck - where can I get help?
+
+The Roblox OSS community has a thread dedicated to React-Lua - you can find the OSS discord [here](https://discord.gg/2nwDM5HDdf), and the React-Lua thread can be found here: **[React-Lua - A 1:1 port of ReactJS, a library for creating user interfaces in Lua](https://discord.com/channels/385151591524597761/1106704321770422464)**

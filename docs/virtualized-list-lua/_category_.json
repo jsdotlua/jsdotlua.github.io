@@ -1,0 +1,8 @@
+{
+  "label": "virtualized-list-lua",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "High-performance virtualized scrolling lists for react-lua."
+  }
+}

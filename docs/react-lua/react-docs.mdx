@@ -1,0 +1,85 @@
+---
+sidebar_position: 2
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# React Documentation
+
+How do you find further documentation on React?
+
+## Why is there no API documentation for `react-lua`?
+
+Because `react-lua` is a transpilation of React, the API is the same as React. The only difference is that the API is in Lua instead of JavaScript/TypeScript.
+
+React is agnostic of the rendering engine, and needs specific implementations (renderers) to work on different platforms. It is for this reason that [React Native](https://reactnative.dev/)
+uses the same React Core as [React DOM](https://react.dev/reference/react-dom) (the browser-based DOM renderer), but has a different renderer.
+
+Similarly, `react-lua` has the [react-roblox](https://github.com/jsdotlua/react-lua/tree/main/packages/react-roblox) renderer for integration with the Roblox DOM / API.
+
+## React Docs
+
+The current React documentation is available at [react.dev](https://react.dev/).
+`react-lua` is based on React 17, so the documentation for that version is the most relevant.
+
+As `react-lua` is a port of React, the documentation for React is also applicable to `react-lua`.
+
+For example, for `useEffect`:
+
+<Tabs>
+<TabItem value="ts" label="TypeScript">
+
+```ts
+
+import { useState, useEffect } from 'react';
+
+export default function Page({ user }) {
+  const [person, setPerson] = useState('Alice');
+
+  useEffect(() => {
+    const { firstName, lastName } = user;
+    setPerson(`${firstName} ${lastName}`)
+  }, [user]);
+
+    ...
+};
+
+```
+
+</TabItem>
+<TabItem value="lua" label="Luau">
+
+```lua
+
+local React = require(ReplicatedStorage.Packages.React)
+
+local useState, useEffect = React.useState, React.useEffect
+
+local function Page(props)
+
+    local person, setPerson = useState('Alice')
+
+    useEffect(function()
+        local firstName, lastName = props.user.firstName, props.user.lastName
+        setPerson(firstName .. ' ' .. lastName)
+    end, { props.user })
+
+    ...
+end
+
+return Page
+
+```
+
+</TabItem>
+</Tabs>
+
+### Caveats
+
+The following are _not_ implemented in `react-lua` (as they weren't introduced in React 17, although there are other features that are not implemented):
+
+- [Suspense / useSuspense](https://react.dev/reference/react/Suspense)
+- [Transitions / useTransition](https://react.dev/reference/react/useTransition)
+- [useDeferredValue](https://react.dev/reference/react/useDeferredValue) and [useSyncExternalStore](https://react.dev/reference/react/useSyncExternalStore)
+- [useInsertionEffect](https://react.dev/reference/react/useInsertionEffect)

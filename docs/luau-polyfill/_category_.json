@@ -1,0 +1,8 @@
+{
+  "label": "luau-polyfill",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "JavaScript polyfill libraries for Luau. Originally derived from Roblox's LuaPackages."
+  }
+}

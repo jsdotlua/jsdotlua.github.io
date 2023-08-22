@@ -1,0 +1,8 @@
+{
+  "label": "RegEx (regex-lua)",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "A runtime-agnostic RegEx interface for Lua."
+  }
+}
